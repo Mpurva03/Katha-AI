@@ -115,7 +115,7 @@ ai-story-generator/
 │   ├── images/            # Generated images
 │   └── audio/             # Generated audio files
 └── README.md              # This file
-
+```
 
 ### Service Fallbacks
 
