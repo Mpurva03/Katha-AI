@@ -1,4 +1,4 @@
-# 🎭 AI Story Generator
+# 🎭 KATHA-AI: A AI Story Generator
 
 A powerful web application that generates creative stories with AI-powered text, images, and audio using multiple AI services including Google Gemini, Hugging Face, Stability AI, and OpenAI.
 
@@ -115,19 +115,6 @@ ai-story-generator/
 │   └── audio/            # Generated audio files
 └── README.md             # This file
 \`\`\`
-
-## 🔧 Configuration
-
-### Environment Variables
-
-| Variable | Required | Description | Default |
-|----------|----------|-------------|---------|
-| \`GEMINI_API_KEY\` | ✅ Yes | Google Gemini API key for story generation | - |
-| \`OPENAI_API_KEY\` | ❌ No | OpenAI API key for audio generation | - |
-| \`HUGGINGFACE_API_TOKEN\` | ❌ No | Hugging Face token for image generation | - |
-| \`STABILITY_API_KEY\` | ❌ No | Stability AI key for image generation | - |
-| \`FLASK_ENV\` | ❌ No | Flask environment | \`development\` |
-| \`PORT\` | ❌ No | Server port | \`5500\` |
 
 ### Service Fallbacks
 
@@ -260,8 +247,6 @@ If you encounter any issues or have questions:
 - [ ] Mobile app version
 
 ---
-
-**Made with ❤️ and AI**
 
 *Generate amazing stories with the power of artificial intelligence!*
 \`\`\`
