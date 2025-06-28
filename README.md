@@ -45,27 +45,28 @@ A powerful web application that generates creative stories with AI-powered text,
    
    Create a \`.env\` file in the project root:
    \`\`\`env
-   # Required for story generation
+   ## For story generation
    GEMINI_API_KEY=your_gemini_api_key_here
    
-   # Optional for audio generation
+   ## For audio generation
    OPENAI_API_KEY=your_openai_api_key_here
    
-   # Optional for image generation
+   ##For image generation
    HUGGINGFACE_API_TOKEN=your_huggingface_token_here
+   
    STABILITY_API_KEY=your_stability_api_key_here
    
-   # Flask configuration
+   ## Flask configuration
    FLASK_ENV=development
    PORT=5500
    \`\`\`
 
-4. **Start the backend server**
+5. **Start the backend server**
    \`\`\`bash
    python app.py
    \`\`\`
 
-5. **Open the frontend**
+6. **Open the frontend**
    
    Open \`index.html\` in your web browser or serve it with a local web server.
 
