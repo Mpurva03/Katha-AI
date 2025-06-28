@@ -1,0 +1,38 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sunlight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700" />
+      <stop offset="100%" stop-color="#FFC300" />
+    </linearGradient>
+    <radialGradient id="catEye" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#00FF00" />
+      <stop offset="100%" stop-color="#228B22" />
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="800" height="600" fill="#F5DEB3"/>
+  <path d="M100,400 C100,300 200,300 200,400 L200,500 L100,500 Z" fill="#A0522D" filter="url(#glow)"/>
+  <path d="M200,400 C200,300 300,300 300,400 L300,500 L200,500 Z" fill="#A0522D" filter="url(#glow)"/>
+  <path d="M300,400 C300,300 400,300 400,400 L400,500 L300,500 Z" fill="#A0522D" filter="url(#glow)"/>
+  <rect x="50" y="100" width="700" height="400" fill="#DEB887" rx="20" ry="20"/>
+  <circle cx="300" cy="200" r="50" fill="url(#sunlight)"/>
+  <path d="M100,100 C100,50 700,50 700,100 L700,150 L100,150 Z" fill="#8B4513"/>
+  <polygon points="500,100 550,50 600,100" fill="#8B4513"/>
+  <ellipse cx="600" cy="300" rx="50" ry="30" fill="#8B4513"/>
+  <path d="M500 200 C500 150 600 150 600 200 L600 250 L500 250 Z" fill="#A0522D"/>
+  <circle cx="350" cy="350" r="30" fill="url(#catEye)" />
+  <path d="M300,300 C300,250 400,250 400,300 L400,350 L300,350 Z" fill="#FFA500"/>
+  <path d="M300,350 C300,300 400,300 400,350 L400,400 L300,400 Z" fill="#800000"/>
+  <circle cx="380" cy="320" r="10" fill="#000000"/>
+  <path d="M450,300 C450,250 550,250 550,300 L550,350 L450,350 Z" fill="#FFD700"/>
+  <polygon points="500,350 550,300 600,350" fill="#FFD700"/>
+  <ellipse cx="400" cy="250" rx="20" ry="10" fill="#FFFFE0"/>
+  <path d="M350,380 C350,330 450,330 450,380 L450,430 L350,430 Z" fill="#DEB887"  />
+  <path d="M300,300 C300,200 400,200 400,300" stroke="#808080" stroke-width="2" fill="none" />
+</svg>

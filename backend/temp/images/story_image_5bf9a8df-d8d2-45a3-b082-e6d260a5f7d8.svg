@@ -1,0 +1,40 @@
+<svg viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#302050" />
+      <stop offset="100%" stop-color="#201030" />
+    </linearGradient>
+    <linearGradient id="waterGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#406080" />
+      <stop offset="100%" stop-color="#204060" />
+    </linearGradient>
+    <radialGradient id="leafGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#8040a0" />
+      <stop offset="100%" stop-color="#603080" />
+    </radialGradient>
+    <radialGradient id="stagGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#201010" />
+      <stop offset="100%" stop-color="#402020" />
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#skyGradient)" />
+  <path d="M100 400 C100 300, 200 200, 400 200 S700 300, 700 400" fill="#406080" stroke="#204060" stroke-width="2"/>
+  <ellipse cx="400" cy="300" rx="150" ry="100" fill="url(#waterGradient)" stroke="#204060" stroke-width="2"/>
+  <path d="M300 400 L300 450 C250 500, 350 500, 400 450 L400 400" fill="#406080" stroke="#204060" stroke-width="2"/>
+  <path d="M600 350 C600 300, 550 250, 500 250 C450 250, 400 300, 400 350 C400 400, 450 450, 500 450 C550 450, 600 400, 600 350 Z" fill="#8040a0" stroke="#603080" stroke-width="2"/>
+  <path d="M150 450 C150 500, 200 550, 250 500 L250 450 Z" fill="#8040a0" stroke="#603080" stroke-width="2"/>
+  <path d="M650 450 C650 500, 700 550, 750 500 L750 450 Z" fill="#8040a0" stroke="#603080" stroke-width="2"/>
+  <path d="M200 400 C180 350, 220 300, 260 350 L260 400 Z" fill="#8040a0" stroke="#603080" stroke-width="2"/>
+  <path d="M700 400 C680 350, 720 300, 760 350 L760 400 Z" fill="#8040a0" stroke="#603080" stroke-width="2"/>
+  <path d="M300 400 Q350 300, 400 400" fill="none" stroke="#603080" stroke-width="2" stroke-dasharray="5,5"/>
+   <circle cx="500" cy="380" r="30" fill="url(#stagGradient)" />
+  <ellipse cx="500" cy="350" rx="20" ry="10" fill="url(#stagGradient)" transform="rotate(30 500 350)"/>
+  <path d="M450 350 C400 320, 400 380, 450 400" fill="none" stroke="url(#stagGradient)" stroke-width="5"/>
+  <path d="M550 350 C600 320, 600 380, 550 400" fill="none" stroke="url(#stagGradient)" stroke-width="5"/>
+  <circle cx="500" cy="340" r="5" fill="black"/>
+  <circle cx="480" cy="330" r="2" fill="black"/>
+  <circle cx="520" cy="330" r="2" fill="black"/>
+  <path d="M250 450 Q220 400, 200 450" fill="none" stroke="grey" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="200" cy="470" r="50" fill="brown" stroke="darkbrown" stroke-width="2" opacity="0.5"/>
+  <path d="M100 400 L 180 470" stroke="grey" stroke-width="10" stroke-linecap="round" opacity="0.5"/>
+</svg>

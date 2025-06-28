@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><b>KATHA AI Story Generator</b></title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="bg-decoration">
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+        <div class="floating-shape shape-4"></div>
+    </div>
+
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn" class="theme-btn">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+        </button>
+    </div>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <header class="hero">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-magic"></i>
+                    <span>Powered by AI</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="gradient-text"><b>KATHA AI Story Generator</b></span>
+                </h1>
+                <p class="hero-description">
+                    Transform your imagination into captivating stories with the power of artificial intelligence. 
+                    Create unique narratives, generate stunning visuals, and bring your tales to life with audio narration.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">10K+</div>
+                        <div class="stat-label">Stories Created</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">8</div>
+                        <div class="stat-label">Genres Available</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">AI</div>
+                        <div class="stat-label">Powered</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Backend Error -->
+        <div id="backend-error" class="alert alert-error hidden">
+            <div class="alert-icon">
+                <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <div class="alert-content">
+                <h3>Backend Connection Error</h3>
+                <p>Unable to connect to the backend server. Please make sure the server is running and try again.</p>
+                <button id="retry-connection" class="btn btn-outline">
+                    <i class="fas fa-refresh"></i>
+                    Retry Connection
+                </button>
+            </div>
+        </div>
+
+        <!-- Story Generation Form -->
+        <div class="card main-card">
+            <div class="card-header">
+                <h2 class="card-title">
+                    <i class="fas fa-pen-fancy"></i>
+                    Create Your Story
+                </h2>
+                <p class="card-subtitle">Fill in the details below to generate your unique story</p>
+            </div>
+            
+            <form id="story-form" class="story-form">
+                <div class="form-section">
+                    <div class="form-group">
+                        <label for="prompt" class="form-label">
+                            <i class="fas fa-lightbulb"></i>
+                            Story Prompt
+                        </label>
+                        <div class="input-wrapper">
+                            <textarea 
+                                id="prompt" 
+                                name="prompt" 
+                                placeholder="Enter a creative prompt for your story (e.g., 'A young wizard discovers a hidden portal in an enchanted forest')" 
+                                required
+                                class="form-textarea"
+                            ></textarea>
+                            <div class="input-decoration"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="genre" class="form-label">
+                                <i class="fas fa-book"></i>
+                                Genre
+                            </label>
+                            <div class="select-wrapper">
+                                <select id="genre" name="genre" class="form-select">
+                                    <option value="fantasy">🧙‍♂️ Fantasy</option>
+                                    <option value="sci-fi">🚀 Science Fiction</option>
+                                    <option value="horror">👻 Horror</option>
+                                    <option value="romance">💕 Romance</option>
+                                    <option value="adventure">⚔️ Adventure</option>
+                                    <option value="historical">🏛️ Historical</option>
+                                    <option value="fairy-tale">🧚‍♀️ Fairy Tale</option>
+                                    <option value="cyberpunk">🤖 Cyberpunk</option>
+                                </select>
+                                <i class="fas fa-chevron-down select-arrow"></i>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tone" class="form-label">
+                                <i class="fas fa-palette"></i>
+                                Tone
+                            </label>
+                            <div class="select-wrapper">
+                                <select id="tone" name="tone" class="form-select">
+                                    <option value="adventurous">🗡️ Adventurous</option>
+                                    <option value="mysterious">🔍 Mysterious</option>
+                                    <option value="humorous">😄 Humorous</option>
+                                    <option value="dark">🌑 Dark</option>
+                                    <option value="whimsical">✨ Whimsical</option>
+                                    <option value="dramatic">🎭 Dramatic</option>
+                                    <option value="inspirational">🌟 Inspirational</option>
+                                    <option value="melancholic">🌧️ Melancholic</option>
+                                    <option value="suspenseful">⚡ Suspenseful</option>
+                                </select>
+                                <i class="fas fa-chevron-down select-arrow"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="slider-header">
+                            <label for="length" class="form-label">
+                                <i class="fas fa-ruler"></i>
+                                Story Length
+                            </label>
+                            <div class="length-display">
+                                <span id="length-value">500</span>
+                                <span class="length-unit">words</span>
+                            </div>
+                        </div>
+                        <div class="slider-wrapper">
+                            <input type="range" id="length" name="length" min="200" max="1000" step="100" value="500" class="form-slider">
+                            <div class="slider-track"></div>
+                            <div class="slider-labels">
+                                <span>Short</span>
+                                <span>Medium</span>
+                                <span>Long</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="options-header">
+                            <h3 class="options-title">
+                                <i class="fas fa-cog"></i>
+                                Generation Options
+                            </h3>
+                        </div>
+                        <div class="checkbox-grid">
+                            <div class="checkbox-card">
+                                <input type="checkbox" id="generate-image" name="generate-image" checked>
+                                <label for="generate-image" class="checkbox-label">
+                                    <div class="checkbox-icon">
+                                        <i class="fas fa-image"></i>
+                                    </div>
+                                    <div class="checkbox-content">
+                                        <div class="checkbox-title">Generate Image</div>
+                                        <div class="checkbox-description">Create a visual representation of your story</div>
+                                    </div>
+                                    <div class="checkbox-indicator">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="checkbox-card">
+                                <input type="checkbox" id="generate-audio" name="generate-audio">
+                                <label for="generate-audio" class="checkbox-label">
+                                    <div class="checkbox-icon">
+                                        <i class="fas fa-volume-up"></i>
+                                    </div>
+                                    <div class="checkbox-content">
+                                        <div class="checkbox-title">Generate Audio</div>
+                                        <div class="checkbox-description">Add AI-powered narration to your story</div>
+                                    </div>
+                                    <div class="checkbox-indicator">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" id="generate-btn" class="btn btn-primary btn-large">
+                        <span class="btn-content">
+                            <i class="fas fa-magic"></i>
+                            <span class="btn-text">Generate Story</span>
+                        </span>
+                        <span class="btn-loading hidden">
+                            <div class="loading-spinner"></div>
+                            <span>Creating your story...</span>
+                        </span>
+                        <div class="btn-shine"></div>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Story Output -->
+        <div id="story-output" class="card story-card hidden">
+            <div class="story-header">
+                <div class="story-title-section">
+                    <h2 class="story-title">
+                        <i class="fas fa-book-open"></i>
+                        Your Generated Story
+                    </h2>
+                    <div class="story-meta">
+                        <span class="meta-item">
+                            <i class="fas fa-clock"></i>
+                            <span id="generation-time">Just now</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="story-actions">
+                    <button id="copy-btn" class="btn btn-icon" title="Copy to clipboard">
+                        <i class="fas fa-copy"></i>
+                    </button>
+                    <button id="download-btn" class="btn btn-icon" title="Download story">
+                        <i class="fas fa-download"></i>
+                    </button>
+                    <button id="regenerate-btn" class="btn btn-icon" title="Regenerate story">
+                        <i class="fas fa-redo"></i>
+                    </button>
+                    <button id="share-btn" class="btn btn-icon" title="Share story">
+                        <i class="fas fa-share-alt"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Story Image -->
+            <div id="story-image-container" class="media-container hidden">
+                <div class="media-header">
+                    <h3 class="media-title">
+                        <i class="fas fa-image"></i>
+                        Story Illustration
+                    </h3>
+                </div>
+                <div class="image-wrapper">
+                    <img id="story-image" class="story-image hidden" alt="Story illustration">
+                    <div class="image-loading">
+                        <div class="loading-animation">
+                            <div class="loading-circle"></div>
+                            <div class="loading-circle"></div>
+                            <div class="loading-circle"></div>
+                        </div>
+                        <span class="loading-text">Generating visual artwork...</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Story Audio -->
+            <div id="story-audio-container" class="media-container hidden">
+                <div class="audio-header">
+                    <h3 class="media-title">
+                        <i class="fas fa-headphones"></i>
+                        Story Narration
+                    </h3>
+                    <button id="generate-audio-btn" class="btn btn-secondary btn-sm">
+                        <i class="fas fa-microphone"></i>
+                        Generate Audio
+                    </button>
+                </div>
+                <div class="audio-wrapper">
+                    <audio id="story-audio" controls class="story-audio"></audio>
+                    <div class="audio-loading hidden">
+                        <div class="audio-visualizer">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                        <span class="loading-text">Generating audio narration...</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Story Content -->
+            <div class="story-content">
+                <div class="story-text-wrapper">
+                    <p id="story-text" class="story-text"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>AI Story Generator</h3>
+                    <p>Bringing imagination to life with artificial intelligence</p>
+                </div>
+                <div class="footer-info">
+                    <p>&copy; <span id="current-year">2024</span> AI Story Generator. All rights reserved.</p>
+                    <p class="footer-tech">Powered by OpenAI, DALL-E, and advanced AI technologies</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast hidden">
+        <div class="toast-content">
+            <div class="toast-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="toast-message">Message here</div>
+            <button class="toast-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="toast-progress"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<svg viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="moonlight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d9e1f2" />
+      <stop offset="100%" stop-color="#a7b7d9" />
+    </linearGradient>
+    <linearGradient id="wood" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#402a1a" />
+      <stop offset="50%" stop-color="#5a3826" />
+      <stop offset="100%" stop-color="#402a1a" />
+    </linearGradient>
+    <radialGradient id="catEye" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#ffcc00" />
+      <stop offset="100%" stop-color="#ff9900" />
+    </radialGradient>
+  </defs>
+  <rect x="0" y="0" width="800" height="600" fill="#1a1a1a"/>
+  <path d="M200 100 L600 100 L600 500 L200 500 Z" fill="url(#wood)" />
+  <path d="M150 100 L150 500 L750 500 L750 100 Z" fill="#2a2a2a" stroke="#333" stroke-width="5"/>
+  <rect x="50" y="100" width="100" height="400" rx="10" ry="10" fill="#444444"/>
+  <path d="M600 200 C650 150, 700 250, 650 300 L600 350 Z" fill="#a98665" stroke="#a98665" stroke-width="2"/>
+  <path d="M650 200 C700 150, 750 250, 700 300 L650 350 Z" fill="#a98665" stroke="#a98665" stroke-width="2"/>
+  <path d="M250 300 C250 250, 350 250, 350 300 C350 350, 250 350, 250 300 Z" fill="url(#moonlight)" opacity="0.8"/>
+  <circle cx="300" cy="325" r="5" fill="#fff"/>
+  <circle cx="320" cy="315" r="5" fill="#fff"/>
+  <circle cx="280" cy="335" r="5" fill="#fff"/>
+  <path d="M300 400 C300 450, 400 450, 400 400 C400 350, 300 350, 300 400 Z" fill="#e0b0ff" opacity="0.8"/>
+  <path d="M500 400 C500 450, 600 450, 600 400 C600 350, 500 350, 500 400 Z" fill="#ffe0b0" opacity="0.8"/>
+  <ellipse cx="350" cy="450" rx="50" ry="30" fill="#e0b0ff" />
+  <ellipse cx="550" cy="450" rx="50" ry="30" fill="#ffe0b0" />
+  <path d="M400 480 Q450 500, 500 480" fill="none" stroke="white" stroke-width="2"/>
+  <polygon points="300,370 320,390 340,370" fill="#ffa500" />
+  <path d="M380 350 L400 400 L420 350 Z" fill="#ffa500" />
+  <ellipse cx="350" cy="380" rx="20" ry="15" fill="#ffa500" transform="rotate(10 350 380)"/>
+  <ellipse cx="370" cy="380" rx="10" ry="8" fill="url(#catEye)" />
+  <ellipse cx="378" cy="380" rx="5" ry="3" fill="black" />
+
+</svg>

@@ -1,0 +1,37 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="firelight" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" stop-color="#FF8C00" stop-opacity="0.8"/>
+<stop offset="100%" stop-color="#FFD700" stop-opacity="0.3"/>
+</linearGradient>
+<linearGradient id="mossglow" x1="0%" y1="0%" x2="0%" y2="100%">
+<stop offset="0%" stop-color="#558B2F"/>
+<stop offset="100%" stop-color="#8FBC8F"/>
+</linearGradient>
+<radialGradient id="candlelight" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+<stop offset="0%" stop-color="#FFFFE0"/>
+<stop offset="100%" stop-color="#FFD700"/>
+</radialGradient>
+</defs>
+<path d="M100,300 C100,100 700,100 700,300 C700,500 100,500 100,300 Z" fill="url(#firelight)" opacity="0.7"/>
+<path d="M100,300 C100,100 700,100 700,300 C700,500 100,500 100,300 Z" fill="url(#firelight)" opacity="0.5" transform="translate(10,10)"/>
+<circle cx="400" cy="350" r="100" fill="black" opacity="0.4"/>
+<path d="M200,400 C200,300 600,300 600,400 C600,500 200,500 200,400 Z" fill="url(#mossglow)"/>
+<ellipse cx="400" cy="300" rx="100" ry="50" fill="url(#candlelight)"/>
+<path d="M 300 200 C 350 150, 450 150, 500 200" fill="none" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M 300 200 C 350 150, 450 150, 500 200" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" transform="translate(10,10)"/>
+<circle cx="350" cy="250" r="20" fill="#FFD700"/>
+<circle cx="450" cy="250" r="20" fill="#FFD700"/>
+<path d="M 350 270 C 360 280, 440 280, 450 270" fill="none" stroke="#FFD700" stroke-width="3" stroke-linecap="round"/>
+<path d="M150 450 a 20 20 0 1 0 40 0 a 20 20 0 1 0 -40 0" fill="#FFFFE0"/>
+<path d="M250 450 a 20 20 0 1 0 40 0 a 20 20 0 1 0 -40 0" fill="#FFFFE0"/>
+<path d="M650 400 a 30 30 0 1 0 60 0 a 30 30 0 1 0 -60 0" fill="#FFFFE0"/>
+
+<path d="M 300 200 C 320 180, 480 180, 500 200" fill="none" stroke="#8B4513" stroke-width="5" stroke-linecap="round" stroke-dasharray="5,5"/>
+<path d="M 300 200 C 320 180, 480 180, 500 200" fill="none" stroke="#8B4513" stroke-width="5" stroke-linecap="round" stroke-dasharray="5,5" transform="translate(5,5)"/>
+
+<polygon points="200,400 250,450 200,500" fill="#A0522D"/>
+<polygon points="500,400 550,450 500,500" fill="#A0522D"/>
+<circle cx="300" cy="480" r="15" fill="#DAA520"/>
+<circle cx="500" cy="480" r="15" fill="#DAA520"/>
+</svg>

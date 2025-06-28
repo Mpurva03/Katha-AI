@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#445566" />
+      <stop offset="100%" stop-color="#223344" />
+    </linearGradient>
+    <linearGradient id="buildingGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#664422" />
+      <stop offset="100%" stop-color="#886644" />
+    </linearGradient>
+    <radialGradient id="smokeGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#888888" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="0" y="0" width="800" height="600" fill="url(#skyGradient)" />
+
+  <path d="M100,300 C100,200 200,100 300,150 L400,200 C500,250 600,300 700,350 L750,400 L700,450 C600,500 500,550 400,500 L300,450 C200,400 100,350 100,300 Z" fill="url(#buildingGradient)" stroke="#332211" stroke-width="2"/>
+
+  <path d="M50,250 C50,200 100,150 150,200 C200,250 150,300 100,350 C50,400 0,350 50,300 Z" fill="url(#buildingGradient)" stroke="#332211" stroke-width="2"/>
+
+
+  <circle cx="200" cy="200" r="30" fill="#a0522d" />
+  <circle cx="200" cy="200" r="20" fill="#e07a5f" />
+
+
+  <path d="M100,100 C150,50 200,100 250,150 C300,200 250,250 200,250 C150,250 100,200 100,100 Z" fill="url(#smokeGradient)" />
+  <path d="M300,100 C350,50 400,100 450,150 C500,200 450,250 400,250 C350,250 300,200 300,100 Z" fill="url(#smokeGradient)" />
+  <path d="M500,100 C550,50 600,100 650,150 C700,200 650,250 600,250 C550,250 500,200 500,100 Z" fill="url(#smokeGradient)" />
+
+  <path d="M600 400 L650 350 L600 300 Z" fill="#800000"/>  <!-- A small shadow figure -->
+
+
+</svg>

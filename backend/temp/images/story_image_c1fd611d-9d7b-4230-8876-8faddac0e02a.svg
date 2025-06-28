@@ -1,0 +1,33 @@
+<svg viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="jungleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#388E8E" />
+      <stop offset="100%" stop-color="#558B2F" />
+    </linearGradient>
+    <linearGradient id="sunstoneGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700" />
+      <stop offset="100%" stop-color="#FFC300" />
+    </linearGradient>
+    <radialGradient id="leafGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#3CB371" />
+      <stop offset="100%" stop-color="#2E8B57" />
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#jungleGradient)" />
+  <path d="M100 400 C100 200, 300 100, 500 200 C700 300, 700 500, 600 500 C500 500, 400 400, 300 400 Z" fill="url(#leafGradient)" stroke="#228B22" stroke-width="5" />
+  <path d="M200 400 C200 250, 400 150, 600 250 C800 350, 700 500, 500 500 C400 500, 300 400, 200 400 Z" fill="url(#leafGradient)" stroke="#228B22" stroke-width="5" />
+  <path d="M600 300 C650 250, 700 200, 750 150 C800 100, 750 50, 700 0 C650 -50, 600 0, 550 50 C500 100, 550 150, 600 200 Z" fill="url(#leafGradient)" stroke="#228B22" stroke-width="5" />
+  <circle cx="350" cy="300" r="30" fill="#A0522D" />
+  <circle cx="400" cy="350" r="25" fill="#A0522D" />
+  <circle cx="300" cy="350" r="20" fill="#A0522D" />
+  <path d="M500 400 L550 450 L500 500 Z" fill="#8B4513" transform="rotate(30 525 425)" />
+  <ellipse cx="450" cy="400" rx="40" ry="20" fill="#8B4513" transform="rotate(10 450 400)" />
+  <polygon points="400,300 450,250 500,300" fill="#8B4513" />
+  <path d="M150 350 C150 300, 200 250, 250 300 C300 350, 250 400, 200 400 C150 400, 100 350, 150 350 Z" fill="#DEB887" />
+  <path d="M 300 400 L350 450 L300 500 Z" fill="url(#sunstoneGradient)" />
+  <path d="M450 450 L500 500 L450 550 Z" fill="#CD853F" />
+  <path d="M 200 400 L 250 450 L 200 500 Z" fill="#CD853F" />
+  <path d="M 50 400 C50 350, 100 300, 150 350 C200 400, 150 450, 100 450 C50 450, 0 400, 50 400 Z" fill="#8B4513" />
+  <path d="M 600 400 C 600 350, 650 300, 700 350 C750 400, 700 450, 650 450 C 600 450, 550 400, 600 400 Z" fill="#8B4513" />
+
+</svg>

@@ -1,0 +1,42 @@
+<svg viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="jungleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#388E8E" />
+      <stop offset="100%" stop-color="#1E6060" />
+    </linearGradient>
+    <linearGradient id="macheteGradient" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#505050" />
+      <stop offset="100%" stop-color="#808080" />
+    </linearGradient>
+    <radialGradient id="serpentScales" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.5"/>
+      <stop offset="50%" stop-color="#a0d0ff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#5080a0" stop-opacity="0.2"/>
+    </radialGradient>
+  </defs>
+  <path d="M0,0 L800,0 L800,600 L0,600 Z" fill="url(#jungleGradient)" />
+  <path d="M100,300 C150,250 200,350 250,300 C300,250 350,350 400,300 C450,250 500,350 550,300 C600,250 650,350 700,300" fill="none" stroke="#4CAF50" stroke-width="2" stroke-linecap="round"/>
+  <path d="M250,300 L350,350" stroke="#666" stroke-width="5" stroke-linecap="round"/>
+  <path d="M350,350 C370,380 400,380 420,350 L470,300" stroke="#666" stroke-width="5" stroke-linecap="round"/>
+  <path d="M300 280 a 20 20 0 1 0 40 0 a 20 20 0 1 0 -40 0" fill="#8B4513"/>
+  <path d="M400 280 a 20 20 0 1 0 40 0 a 20 20 0 1 0 -40 0" fill="#8B4513"/>
+  <polygon points="400,300 450,250 420,250" fill="#666" />
+  <path d="M300,200 L350,150 L400,200 Z" fill="#8B4513"/>
+  <path d="M250,300 L450,300" fill="none" stroke="url(#macheteGradient)" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="650" cy="200" r="50" fill="url(#serpentScales)" filter="url(#glow)" opacity="0.7"/>
+  <circle cx="700" cy="180" r="30" fill="url(#serpentScales)" filter="url(#glow)" opacity="0.7"/>
+  <circle cx="600" cy="220" r="40" fill="url(#serpentScales)" filter="url(#glow)" opacity="0.7"/>
+  <filter id="glow">
+    <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
+    <feMerge>
+      <feMergeNode in="coloredBlur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+  <circle cx="750" cy="150" r="20" fill="#5080a0" opacity="0.5"/>
+  <path d="M100,400 C150,450 200,350 250,400 C300,450 350,350 400,400" fill="#a0522d" stroke="#a0522d" stroke-width="5"/>
+  <path d="M500,400 C550,450 600,350 650,400" fill="#a0522d" stroke="#a0522d" stroke-width="5"/>
+  <path d="M 150 400 Q 200 500, 250 400" fill="none" stroke="#a0522d" stroke-width="5"/>
+
+
+</svg>

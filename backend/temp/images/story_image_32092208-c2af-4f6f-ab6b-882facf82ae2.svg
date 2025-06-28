@@ -1,0 +1,35 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sunlight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe8a0"/>
+      <stop offset="100%" stop-color="#ffd770"/>
+    </linearGradient>
+    <radialGradient id="emeraldGlow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#00b050"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="800" height="600" fill="#a08060"/>
+  <rect x="0" y="0" width="800" height="300" fill="url(#sunlight)"/>
+  <path d="M100,300 C100,200 200,100 300,100 C400,100 500,200 500,300 C500,400 400,500 300,500 C200,500 100,400 100,300 Z" fill="#806040" filter="url(#glow)"/>
+  <path d="M500,300 C500,200 600,100 700,100 C800,100 700,200 700,300 C700,400 600,500 500,500 C400,500 300,400 300,300 Z" fill="#806040" filter="url(#glow)"/>
+  <ellipse cx="400" cy="250" rx="50" ry="40" fill="#202020"/>
+  <ellipse cx="390" cy="240" rx="10" ry="8" fill="url(#emeraldGlow)" filter="url(#glow)"/>
+  <path d="M350,200 C350,180 370,170 390,170 C410,170 430,180 430,200 C430,220 410,230 390,230 C370,230 350,220 350,200 Z" fill="#202020"/>
+  <path d="M360,180 C360,160 380,150 400,150 C420,150 440,160 440,180 C440,200 420,210 400,210 C380,210 360,200 360,180 Z" fill="black"/>
+  <circle cx="400" cy="250" r="30" fill="#202020"/>
+  <circle cx="400" cy="250" r="25" fill="url(#emeraldGlow)" filter="url(#glow)"/>
+  <path d="M 600 450 L 700 500 L 700 400 Z" fill="#8B4513"/>
+  <path d="M 100 450 C 100 400, 150 350, 200 350 C 250 350, 300 400, 300 450 Z" fill="#8B4513"/>
+  <path d="M150 400 C150 380 170 370 190 370 C210 370 230 380 230 400 C230 420 210 430 190 430 C170 430 150 420 150 400 Z" fill="#A0522D"/>
+  <path d="M650,400 L650,480 L 700 480 L 700 430 Z" fill="#8B4513"/>
+  <circle cx="300" cy="400" r="20" fill="#8B4513"/>
+  <path d="M 200 450 C 200 500, 250 550, 300 550 C 350 550, 400 500, 400 450 Z" fill="#8B4513"/>
+</svg>

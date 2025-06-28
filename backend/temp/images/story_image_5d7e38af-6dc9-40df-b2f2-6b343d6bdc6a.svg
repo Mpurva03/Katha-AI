@@ -1,0 +1,39 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="firelight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF8C00" />
+      <stop offset="100%" stop-color="#FFD700" />
+    </linearGradient>
+    <linearGradient id="potionglow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#551A8B" />
+      <stop offset="50%" stop-color="#8B008B" />
+      <stop offset="100%" stop-color="#483D8B" />
+    </linearGradient>
+    <radialGradient id="catEye" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#FFD700" />
+      <stop offset="100%" stop-color="#FFFAF0" />
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="#222222"/>
+  <path d="M100,100 C100,50 200,50 200,100 L200,500 C200,550 100,550 100,500 Z" fill="#A0522D" stroke="#704214" stroke-width="5"/>
+  <path d="M200,100 C200,50 300,50 300,100 L700,100 C700,50 800,50 800,100 L800,500 C800,550 700,550 700,500 L300,500 C300,550 200,550 200,500 Z" fill="#A0522D" stroke="#704214" stroke-width="5"/>
+  <path d="M300,100 C300,50 400,50 400,100 L700,100 C700,50 800,50 800,100 L800,500 C800,550 700,550 700,500 L400,500 C400,550 300,550 300,500 Z" fill="#A0522D" stroke="#704214" stroke-width="5"/>
+
+  <ellipse cx="600" cy="350" rx="50" ry="40" fill="#8B4513" />
+  <path d="M550,300 C550,250 650,250 650,300 L650,400 C650,450 550,450 550,400 Z" fill="url(#potionglow)" stroke="#483D8B" stroke-width="2"/>
+  <circle cx="600" cy="350" r="20" fill="url(#potionglow)"/>
+  <path d="M500,200 C480,180 450,200 470,220 L400,250 C350,280 400,300 450,270 Z" fill="#DAA520" stroke="#800000" stroke-width="2" />
+  <circle cx="150" cy="400" r="30" fill="url(#catEye)" />
+  <circle cx="150" cy="400" r="25" fill="black" />
+  <path d="M100,400 C100,350 100,450 200,400" stroke="gold" stroke-width="2" fill="none"/>
+  <path d="M100 150 C100 100,200 100,200 150 L200 170 C200 220, 100 220,100 170 Z" fill="#808000"/>
+  <rect x="400" y="150" width="100" height="50" fill="#800000" rx="10" ry="10"/>
+    <polygon points="450,150 500,100 550,150" fill="#800000" stroke="black" stroke-width="2"/>
+
+
+  <path d="M400 200 C 400 150, 500 150, 500 200 L 500 250 C 500 300, 400 300, 400 250 Z" fill="url(#firelight)" />
+  <path d="M 500 200 C 500 150, 600 150, 600 200 L 600 250 C 600 300, 500 300, 500 250 Z" fill="#FFD700" />
+  <path d="M 600 200 C 600 150, 700 150, 700 200 L 700 250 C 700 300, 600 300, 600 250 Z" fill="#FF8C00"/>
+
+
+</svg>

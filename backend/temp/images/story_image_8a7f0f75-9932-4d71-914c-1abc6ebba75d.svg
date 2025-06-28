@@ -1,0 +1,38 @@
+<svg viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="goldEyes" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="100%" stop-color="#FF8C00"/>
+    </linearGradient>
+    <linearGradient id="sunstone" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFF00"/>
+      <stop offset="100%" stop-color="#FFD700"/>
+    </linearGradient>
+    <radialGradient id="fungiGlow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#00FF00"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="#224422"/>
+  <path d="M100 300 C100 100, 700 100, 700 300, 700 500, 100 500, 100 300 Z" fill="#448844"/>
+  <path d="M500 200 c 0 -50, 100 -50, 100 0, 0 50, -100 50, -100 0 Z" fill="#88AA88"/>
+  <ellipse cx="600" cy="400" rx="30" ry="20" fill="#88AA88"/>
+  <path d="M600 400 C 600 450, 700 450, 700 400, 700 350, 600 350, 600 400 Z" fill="#88AA88"/>
+  <circle cx="650" cy="380" r="10" fill="#FFFF00"/>
+  <path d="M150 400 C150 350, 250 350, 250 400, 250 450, 150 450, 150 400 Z" fill="url(#fungiGlow)" filter="url(#glow)"/>
+  <path d="M200 420 C200 400, 220 400, 220 420, 220 440, 200 440, 200 420 Z" fill="url(#fungiGlow)"/>
+  <path d="M700 400 l 0 100 a 50 50 0 0 1 -100 0 l 0 -100 z" fill="#88AA88"/>
+  <path d="M 200 450 C 200 500, 300 500, 300 450, 300 400, 200 400, 200 450 Z" fill="url(#fungiGlow)"/>
+  <path d="M300 300 c 0 -50, 50 -50, 50 0, 0 50, -50 50, -50 0 Z" fill="#FFD700"/>
+  <path d="M 320 320 c 0 -30, 20 -30, 20 0, 0 30, -20 30, -20 0 Z" fill="#FFD700"/>
+  <ellipse cx="250" cy="470" rx="20" ry="10" fill="url(#goldEyes)" />
+  <ellipse cx="270" cy="470" rx="20" ry="10" fill="url(#goldEyes)" />
+  <path d="M300 450 c 0 -20, 10 -20, 10 0, 0 20, -10 20, -10 0 Z" fill="orange"/>
+  <path d="M 250 350 l 10 10, 10 -10, -10 -10, -10 10 Z" fill="orange"/>
+  <path d="M350 100 a 50 50 0 0 1 -100 0 a 50 50 0 0 1 100 0 z" fill="url(#sunstone)"/>
+
+  <path d="M 300 400 a 50 50 0 0 0 100 0 a 50 50 0 0 0 -100 0 z" fill="#FF9900"/>
+  <path d="M250 380 c 0 -30, 50 -30, 50 0, 0 30, -50 30, -50 0 Z" fill="#FFCC00"/>
+
+  <path d="M 300 500 c 0 -50, 50 -50, 50 0, 0 50, -50 50, -50 0 z" fill="#FFA500"/>
+</svg>

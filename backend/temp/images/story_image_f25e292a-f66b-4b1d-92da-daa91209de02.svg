@@ -1,0 +1,41 @@
+<svg viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="jungleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#228B22" />
+      <stop offset="50%" stop-color="#3CB371" />
+      <stop offset="100%" stop-color="#2E8B57" />
+    </linearGradient>
+    <linearGradient id="leafGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#556B2F" />
+      <stop offset="100%" stop-color="#808000" />
+    </linearGradient>
+    <radialGradient id="flowerGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#FFC0CB" />
+      <stop offset="100%" stop-color="#FF69B4" />
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <path d="M0,300 C0,200 400,100 800,300 L800,600 L0,600 Z" fill="url(#jungleGradient)" />
+  <path d="M100,400 C100,300 200,200 300,300" fill="none" stroke="#006400" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M500,400 C500,300 600,200 700,300" fill="none" stroke="#006400" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"  />
+  <path d="M200,350 C200,250 250,200 350,250" fill="none" stroke="#006400" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"  />
+  <circle cx="400" cy="300" r="50" fill="url(#flowerGradient)" filter="url(#glow)" />
+  <ellipse cx="600" cy="250" rx="30" ry="40" fill="url(#flowerGradient)" filter="url(#glow)" />
+  <polygon points="150,400 100,450 200,450" fill="url(#leafGradient)" />
+  <polygon points="600,350 550,400 650,400" fill="url(#leafGradient)" />
+  <path d="M400,300 L400,200" stroke="#A0522D" stroke-width="10" stroke-linecap="round" />
+  <circle cx="400" cy="150" r="30" fill="#A0522D" />
+  <circle cx="400" cy="150" r="20" fill="#8B4513" />
+  <ellipse cx="400" cy="150" rx="10" ry="5" fill="#FF0000" transform="rotate(45,400,150)" />
+  <path d="M400,100 C400,50 450,0 500,50" fill="none" stroke="#A0522D" stroke-width="5" stroke-linecap="round" />
+
+  <path d="M 350 250 C 350 220, 380 200, 400 220 C 420 240, 450 250, 450 280" stroke="brown" stroke-width="5" fill="none"/>
+  <path d="M 350 280 C 350 310, 380 330, 400 310 C 420 290, 450 280, 450 250" stroke="brown" stroke-width="5" fill="none"/>
+
+</svg>

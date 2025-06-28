@@ -1,0 +1,37 @@
+<svg viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="buttonGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a1887f" />
+      <stop offset="50%" stop-color="#f2e8cf" />
+      <stop offset="100%" stop-color="#a1887f" />
+    </linearGradient>
+    <linearGradient id="woodGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a3121" />
+      <stop offset="50%" stop-color="#634230" />
+      <stop offset="100%" stop-color="#4a3121" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="white" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </radialGradient>
+
+  </defs>
+  <rect x="0" y="0" width="800" height="600" fill="#595959"/>
+  <path d="M200 200 C200 150, 300 150, 300 200 C300 250, 400 250, 400 200 C400 150, 500 150, 500 200 C500 250, 600 250, 600 200" fill="url(#woodGradient)" stroke="#332211" stroke-width="5"/>
+  <path d="M200 200 L200 400 L600 400 L600 200 Z" fill="url(#woodGradient)" stroke="#332211" stroke-width="5"/>
+  <path d="M220 220 L580 220 L580 380 L220 380 Z" fill="#332211"/>
+  <circle cx="400" cy="300" r="30" fill="url(#buttonGradient)" stroke="#886655" stroke-width="2"/>
+  <circle cx="400" cy="300" r="25" fill="url(#glow)"/>
+  <circle cx="400" cy="300" r="15" fill="#fff"/>
+  <path d="M350 450 C350 400, 450 400, 450 450" fill="#A0A0A0" stroke="grey" stroke-width="2"/>
+  <path d="M370 450 L370 500 L430 500 L430 450 Z" fill="#A0A0A0"/>
+  <circle cx="380" cy="475" r="5" fill="#A0A0A0"/>
+  <circle cx="420" cy="475" r="5" fill="#A0A0A0"/>
+  <path d="M 350 470 C 350 460, 370 460, 370 470 C 370 480, 350 480, 350 470 Z" fill="#A0A0A0"/>
+  <path d="M 430 470 C 430 460, 450 460, 450 470 C 450 480, 430 480, 430 470 Z" fill="#A0A0A0"/>
+  <path d="M360 420 C360 380, 440 380, 440 420" stroke="#888" stroke-width="2" fill="none"/>
+  <path d="M370 420 C370 400, 430 400, 430 420" stroke="#888" stroke-width="2" fill="none"/>
+  <path d="M380 410 C380 390, 420 390, 420 410" stroke="#888" stroke-width="2" fill="none"/>
+
+
+</svg>

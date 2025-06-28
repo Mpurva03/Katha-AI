@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="lamplight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FFA500" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="streetlight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFE0" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FFFACD" stop-opacity="0.2"/>
+    </linearGradient>
+
+  </defs>
+  <rect width="800" height="600" fill="#222"/>
+  <path d="M0,300 C0,200 400,100 800,300 L800,600 L0,600 Z" fill="url(#streetlight)"/>
+
+  <path d="M100,400 C100,350 150,300 200,350 C250,400 300,450 350,400 C400,350 450,300 500,350 C550,400 600,450 650,400 C700,350 750,300 800,350 L800,600 L0,600 Z" fill="#444"/>
+
+  <circle cx="150" cy="250" r="20" fill="url(#lamplight)"/>
+  <circle cx="300" cy="200" r="20" fill="url(#lamplight)"/>
+  <circle cx="450" cy="280" r="20" fill="url(#lamplight)"/>
+  <circle cx="600" cy="220" r="20" fill="url(#lamplight)"/>
+
+
+  <path d="M200,450 L250,500 L200,550 Z" fill="#8B4513"/>
+  <path d="M300,400 L350,450 L300,500 Z" fill="#8B4513"/>
+  <path d="M400,480 L450,530 L400,580 Z" fill="#8B4513"/>
+  <path d="M500,430 L550,480 L500,530 Z" fill="#8B4513"/>
+  <path d="M600,460 L650,510 L600,560 Z" fill="#8B4513"/>
+
+
+  <path d="M350 400 L450 300  C450 300 400 200 350 200  L 250 300 C250 300 300 400 350 400 Z" fill="#A0522D" stroke="#703010" stroke-width="3"/>
+
+
+  <polygon points="380,350 400,320 420,350" fill="#8B4513"/>
+  <polygon points="380,350 400,380 420,350" fill="#8B4513"/>
+
+
+  <path d="M400,350 a 50 50 0 1 0 0 100 a 50 50 0 1 0 0 -100" fill="#8B4513" stroke="#703010" stroke-width="2"/>
+
+</svg>

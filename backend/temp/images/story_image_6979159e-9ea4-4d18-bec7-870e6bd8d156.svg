@@ -1,0 +1,54 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="mushroomGlow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#f0e68c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#294056"/>
+      <stop offset="50%" stop-color="#3b5970"/>
+      <stop offset="100%" stop-color="#1e3047"/>
+    </linearGradient>
+    <linearGradient id="streamGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a0d2eb"/>
+      <stop offset="100%" stop-color="#d0f2ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#skyGradient)"/>
+  <path d="M100 400 C100 300, 200 200, 300 250 C400 300, 500 400, 600 450 C700 500, 750 550, 750 550" fill="#228B22" stroke="#556B2F" stroke-width="2"/>
+  <circle cx="200" cy="300" r="50" fill="url(#mushroomGlow)" stroke="#964B00" stroke-width="3"/>
+  <circle cx="400" cy="250" r="70" fill="url(#mushroomGlow)" stroke="#964B00" stroke-width="4"/>
+  <circle cx="600" cy="350" r="60" fill="url(#mushroomGlow)" stroke="#964B00" stroke-width="3"/>
+  <path d="M700 500 C700 550, 650 580, 600 580 C550 580, 500 550, 500 500 C500 450, 550 420, 600 420 C650 420, 700 450, 700 500 Z" fill="#8B4513" stroke="#556B2F" stroke-width="2"/>
+  <path d="M100 500 C100 550, 150 580, 200 580 C250 580, 300 550, 300 500" stroke="#556B2F" stroke-width="2" fill="#8B4513"/>
+
+  <path d="M70 450 C70 400, 100 350, 150 350 C200 350, 230 400, 230 450" fill="brown" stroke="#556B2F" stroke-width="2"/>
+  <path d="M 150 300 L 150 350 L 130 320 L 150 300 Z" fill="brown"/>
+  <path d="M 150 350 L 170 330 L 150 300 Z" fill="brown"/>
+
+  <path d="M50 480 c 0 -20, 20 -30, 40 -30 c 20 0, 40 10, 40 30" fill="brown" stroke="#556B2F" stroke-width="2"/>
+  <path d="M 100 480 Q 120 450, 140 480" fill="brown" stroke="#556B2F" stroke-width="2"/>
+
+  <path d="M150 480 L700 480" stroke="#b0c4de" stroke-width="10" stroke-linecap="round"/>
+  <path d="M700 480 Q 750 500, 750 460" fill="url(#streamGradient)" stroke="#b0c4de" stroke-width="10"/>
+
+  <ellipse cx="700" cy="480" rx="50" ry="30" fill="#a0d2eb"/>
+  <ellipse cx="750" cy="460" rx="30" ry="20" fill="#d0f2ff"/>
+
+  <path d="M650 400 L750 350 L 750 450 Z" fill="#808000" stroke="#556B2F" stroke-width="2"/>
+  <path d="M600 350 L700 300 L 700 400 Z" fill="#808000" stroke="#556B2F" stroke-width="2"/>
+  <circle cx="700" cy="350" r="20" fill="#808000"/>
+  <circle cx="650" cy="400" r="20" fill="#808000"/>
+
+  <path d="M 500 400 Q 550 300, 600 400" stroke="grey" stroke-width="3"/>
+
+
+  <polygon points="700,300 750,250 800,300" fill="#808000" stroke="#556B2F" stroke-width="2"/>
+  <polygon points="650,250 700,200 750,250" fill="#808000" stroke="#556B2F" stroke-width="2"/>
+
+  <circle cx="720" cy="250" r="10" fill="yellow"/>
+  <circle cx="780" cy="280" r="10" fill="yellow"/>
+  <circle cx="700" cy="220" r="10" fill="yellow"/>
+
+
+</svg>

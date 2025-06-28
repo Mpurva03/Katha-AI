@@ -1,0 +1,39 @@
+<svg viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F8C3B2" />
+      <stop offset="100%" stop-color="#E07A5F" />
+    </linearGradient>
+    <linearGradient id="crystalGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFE0" />
+      <stop offset="100%" stop-color="#FFD700" />
+    </linearGradient>
+    <radialGradient id="lightGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#FFFFE0" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FFFFE0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect x="0" y="0" width="800" height="600" fill="url(#skyGradient)" />
+  <path d="M200 300 C200 200, 400 200, 400 300 L400 400 L200 400 Z" fill="#556B2F"/>
+  <path d="M150 300 C150 250, 450 250, 450 300 L450 400 L150 400 Z" fill="#827397"/>
+  <path d="M300 250 a50 50 0 1 0 100 0 a50 50 0 1 0 -100 0" fill="#A0522D"/>
+  <ellipse cx="350" cy="250" rx="20" ry="10" fill="#FFD700"/>
+  <ellipse cx="350" cy="260" rx="15" ry="8" fill="#FFD700"/>
+  <path d="M300 300 L300 500 L400 500 L400 300 Z" fill="#A0522D"/>
+  <path d="M300 250 Q350 200, 400 250" stroke="#A0522D" stroke-width="5" fill="none"/>
+  <path d="M300 350 C300 300, 400 300, 400 350" stroke="black" stroke-width="2" fill="none"/>
+  <path d="M350 450 L350 500 L370 500 L370 450 Z" fill="brown"/>
+  <circle cx="360" cy="475" r="5" fill="brown"/>
+  <circle cx="340" cy="475" r="5" fill="brown"/>
+  <path d="M300 400 L300 450 L400 450 L400 400 Z" fill="#A0522D"/>
+  <path d="M250 350 C250 300, 350 300, 350 350" stroke="#8B4513" stroke-width="3" fill="none"/>
+  <polygon points="350,350 370,330 390,350" fill="#8B4513"/>
+  <circle cx="300" cy="300" r="10" fill="#8B4513"/>
+  <path d="M100 400 L100 500 L200 500 L200 400 Z" fill="#A0522D"/>
+  <ellipse cx="150" cy="450" rx="20" ry="10" fill="brown"/>
+  <path d="M500 300 c 0 -50 50 -50 50 0 c 0 100 -100 100 -100 0" fill="url(#lightGradient)"/>
+  <circle cx="500" cy="300" r="30" fill="url(#crystalGradient)"/>
+  <path d="M600 250 L650 200 L700 250" stroke="#FFFFE0" stroke-width="3" fill="none"/>
+  <path d="M600 250 L650 300 L700 250" stroke="#FFFFE0" stroke-width="3" fill="none"/>
+  <path d="M550 300 c 0 -20 50 -20 50 0" fill="url(#crystalGradient)"/>
+</svg>

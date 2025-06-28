@@ -1,0 +1,37 @@
+<svg viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="sunstoneGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700" />
+      <stop offset="100%" stop-color="#FFFF00" />
+    </linearGradient>
+    <linearGradient id="iguanaScales" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#008000" />
+      <stop offset="50%" stop-color="#50C878" />
+      <stop offset="100%" stop-color="#008000" />
+    </linearGradient>
+    <radialGradient id="frogEyeGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#FFD700" />
+      <stop offset="100%" stop-color="#8B4513" />
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="#228B22" />
+  <path d="M100,200 C100,100 200,0 400,0 C600,0 700,100 700,200 L700,500 L100,500 Z" fill="#A0522D" stroke="#800000" stroke-width="5" />
+  <path d="M300,200 C300,150 350,100 400,100 C450,100 500,150 500,200" fill="#A0522D" stroke="#800000" stroke-width="2" />
+  <path d="M400,100 L400,50" fill="#A0522D" stroke="#800000" stroke-width="2" />
+  <path d="M150 350 C150,300 200,250 250,250 C300,250 350,300 350,350 L350,400 L150,400 Z" fill="url(#iguanaScales)" stroke="#006400" stroke-width="2" />
+  <ellipse cx="300" cy="375" rx="20" ry="15" fill="#006400" />
+  <ellipse cx="200" cy="375" rx="15" ry="10" fill="#006400" />
+  <circle cx="400" cy="450" r="100" fill="#6B8E23"/>
+  <ellipse cx="400" cy="350" rx="100" ry="50" fill="url(#frogEyeGradient)" />
+  <ellipse cx="400" cy="350" rx="80" ry="40" fill="#3CB371" />
+  <circle cx="400" cy="300" r="50" fill="url(#sunstoneGradient)" />
+  <path d="M400,300 L450,250 L400,200 Z" fill="#FFD700" />
+  <path d="M400,300 L350,250 L400,200 Z" fill="#FFD700" />
+  <path d="M500,400 C500,300 600,200 700,200" stroke="#008000" stroke-width="5" stroke-linecap="round"/>
+
+  <filter id="drop-shadow">
+    <feGaussianBlur stdDeviation="2" />
+    <feOffset dx="2" dy="2" />
+  </filter>
+  <circle cx="400" cy="480" r="20" fill="black" filter="url(#drop-shadow)"/>
+</svg>

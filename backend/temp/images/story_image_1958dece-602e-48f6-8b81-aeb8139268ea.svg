@@ -1,0 +1,38 @@
+<svg viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="mushroomGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FFFF00" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="riverGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#A0E7FF" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#87CEEB" stop-opacity="0.2"/>
+    </linearGradient>
+    <radialGradient id="mossGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#558B2F"/>
+      <stop offset="100%" stop-color="#3CB371"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="#1A202C"/>
+  <path d="M100 400 C100 200, 300 100, 500 200 C700 300, 700 500, 600 500" fill="url(#mossGradient)" stroke="#006400" stroke-width="2"/>
+  <path d="M150 500 C150 400, 250 300, 350 400 C450 500, 550 400, 650 500" fill="url(#mossGradient)" stroke="#006400" stroke-width="2"/>
+  <path d="M50 450 C50 350, 150 250, 250 350 C350 450, 450 350, 550 450" fill="url(#mossGradient)" stroke="#006400" stroke-width="2"/>
+
+  <path d="M100 500 C100 300, 700 200, 700 500" fill="url(#riverGlow)" stroke="#87CEEB" stroke-width="5" stroke-opacity="0.5"/>
+
+  <ellipse cx="200" cy="300" rx="50" ry="100" fill="url(#mushroomGlow)" stroke="#FFD700" stroke-width="3"/>
+  <ellipse cx="350" cy="250" rx="70" ry="120" fill="url(#mushroomGlow)" stroke="#FFD700" stroke-width="3"/>
+  <ellipse cx="500" cy="350" rx="60" ry="110" fill="url(#mushroomGlow)" stroke="#FFD700" stroke-width="3"/>
+  <ellipse cx="650" cy="280" rx="40" ry="80" fill="url(#mushroomGlow)" stroke="#FFD700" stroke-width="3"/>
+
+  <circle cx="300" cy="400" r="20" fill="#8B4513"/>
+  <circle cx="400" cy="430" r="25" fill="#8B4513"/>
+  <circle cx="500" cy="380" r="15" fill="#8B4513"/>
+
+
+  <path d="M350 400 C350 450, 400 480, 450 450 C500 420, 550 400, 500 380" fill="#8B4513" stroke="#8B4513" stroke-width="2"/>
+
+  <circle cx="400" cy="400" r="30" fill="#A0522D"/>
+  <path d="M380 380 L420 380 L400 350 Z" fill="#A0522D"/>
+
+</svg>

@@ -1,0 +1,40 @@
+<svg viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="rainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#446688" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#224466" stop-opacity="0.5"/>
+    </linearGradient>
+    <linearGradient id="mapGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#FFC300" stop-opacity="0.8"/>
+    </linearGradient>
+    <radialGradient id="lightGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#FFFFE0" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect x="0" y="0" width="800" height="600" fill="#222222"/>
+  <rect x="100" y="100" width="600" height="400" rx="10" ry="10" fill="url(#rainGradient)" stroke="#333333" stroke-width="5"/>
+  <path d="M150 150 L650 150 L650 450 L150 450 Z" fill="rgba(0,0,0,0.5)"/>
+  <path d="M200 200 C250 100, 550 100, 600 200" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="5 5"/>
+  <path d="M100 100 C100 50, 700 50, 700 100" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="5 5"/>
+  <path d="M300 250 L400 350 L500 250 Z" fill="url(#mapGradient)" stroke="#000000" stroke-width="2"/>
+  <polygon points="350,300 360,290 370,300 360,310" fill="#000000"/>
+  <polygon points="400,300 410,290 420,300 410,310" fill="#000000"/>
+  <polygon points="450,280 460,270 470,280 460,290" fill="#000000"/>
+  <ellipse cx="350" cy="300" rx="20" ry="15" fill="#FFD700"/>
+  <path d="M300 350 L350 400 L400 350 Z" fill="#A0522D"/>
+  <circle cx="400" cy="300" r="10" fill="#000000"/>
+  <polygon points="350,400 400,450 450,400" fill="#A0522D"/>
+  <path d="M250 400 C270 420, 330 420, 350 400" fill="none" stroke="#000000" stroke-width="2"/>
+  <path d="M350 300 C330 320, 370 320, 350 300" fill="none" stroke="#000000" stroke-width="2"/>
+  <path d="M400 250 L450 300 L500 250 Z" fill="#A0522D"/>
+  <circle cx="300" cy="400" r="10" fill="#000000"/>
+  <path d="M300 350 C300 370, 400 370, 400 350" fill="none" stroke="#000000" stroke-width="2"/>
+  <rect x="250" y="450" width="100" height="50" rx="5" ry="5" fill="#696969"/>
+  <circle cx="300" cy="500" r="20" fill="url(#lightGradient)"/>
+  <ellipse cx="300" cy="480" rx="30" ry="20" fill="#8B4513"/>
+  <path d="M200 480 C200 500, 400 500, 400 480" fill="none" stroke="#8B4513" stroke-width="10"/>
+  <circle cx="300" cy="500" r="10" fill="#000000"/>
+
+</svg>

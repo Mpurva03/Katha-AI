@@ -1,0 +1,45 @@
+<svg viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#261e40"/>
+      <stop offset="50%" stop-color="#3a2e59"/>
+      <stop offset="100%" stop-color="#4d3e6e"/>
+    </linearGradient>
+    <linearGradient id="leafGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#558b2f"/>
+      <stop offset="50%" stop-color="#71a545"/>
+      <stop offset="100%" stop-color="#87be5b"/>
+    </linearGradient>
+    <radialGradient id="hummingbirdGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#c0c0c0"/>
+      <stop offset="100%" stop-color="#a0a0a0"/>
+    </radialGradient>
+    <radialGradient id="eyeGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#558b2f"/>
+      <stop offset="100%" stop-color="#224411"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#skyGradient)"/>
+  <path d="M100 400 C100 300, 200 200, 400 200 S700 300, 700 400" fill="none" stroke="#4d3e6e" stroke-width="5" stroke-linecap="round"/>
+  <path d="M100 400 C100 500, 200 600, 400 600 S700 500, 700 400" fill="none" stroke="#4d3e6e" stroke-width="5" stroke-linecap="round"/>
+  <g transform="translate(300 350)">
+    <circle cx="0" cy="0" r="20" fill="#d9d9d9"/>
+    <ellipse cx="0" cy="0" rx="15" ry="10" fill="#a0a0a0"/>
+    <circle cx="0" cy="0" r="10" fill="url(#eyeGradient)"/>
+  </g>
+    <g transform="translate(50 400)">
+    <path d="M0 0 L10 10 L0 20 Z" fill="#558b2f"/>
+    <path d="M0 0 L10 10 L0 20 Z" fill="#558b2f" transform="translate(15 0)"/>
+    <path d="M0 0 L10 10 L0 20 Z" fill="#558b2f" transform="translate(30 0)"/>
+  </g>
+  <path d="M50 450 C50 550, 150 650, 250 600 S350 550, 350 450" fill="none" stroke="#558b2f" stroke-width="2"/>
+  <g transform="translate(200 400)">
+    <ellipse cx="0" cy="0" rx="20" ry="10" fill="url(#hummingbirdGradient)"/>
+    <polygon points="0,0 10,5 0,10" fill="#a0a0a0" transform="translate(10 0) rotate(20)"/>
+  </g>
+  <path d="M700 400 L750 450 L700 500" fill="#87be5b"/>
+  <path d="M150 400 C150 350, 250 300, 350 350 S450 400, 450 350" fill="none" stroke="#87be5b" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="500,300 550,250 600,300" fill="#558b2f"/>
+  <polygon points="550,250 600,200 650,250" fill="#558b2f"/>
+  <ellipse cx="600" cy="250" rx="50" ry="30" fill="url(#leafGradient)" transform="rotate(10)"/>
+</svg>

@@ -1,0 +1,33 @@
+<svg viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#222233"/>
+      <stop offset="50%" stop-color="#332244"/>
+      <stop offset="100%" stop-color="#443355"/>
+    </linearGradient>
+    <linearGradient id="mistGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#005500" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#00aa00" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#005500" stop-opacity="0.8"/>
+    </linearGradient>
+    <radialGradient id="moonGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#ffff88"/>
+      <stop offset="100%" stop-color="#aaaa55"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#skyGradient)"/>
+  <path d="M0 300 C0 200, 800 200, 800 300 L800 600 L0 600 Z" fill="url(#mistGradient)"/>
+  <ellipse cx="600" cy="150" rx="50" ry="50" fill="url(#moonGradient)"/>
+  <path d="M100 350 C100 450, 200 500, 200 350 L200 400 C200 500, 300 550, 300 400 L300 350 C300 250, 400 200, 400 350 L400 400 C400 500, 500 550, 500 400 L500 350 C500 250, 600 200, 600 350 L600 400 C600 500, 700 550, 700 400 L700 350 C700 250, 800 200, 800 350" fill="black" stroke="black" stroke-width="2"/>
+
+  <path d="M500 300 L500 500 C500 550, 450 580, 400 580 C350 580, 300 550, 300 500 L300 300" fill="black" stroke="black" stroke-width="2"/>
+    <polygon points="700,400 650,350 750,350" fill="black" stroke="black" stroke-width="2"/>
+    <polygon points="600,400 550,350 650,350" fill="black" stroke="black" stroke-width="2"/>
+  <path d="M600 400 L600 450 C600 500, 550 530, 500 530 C450 530, 400 500, 400 450 L400 400" fill="black" stroke="black" stroke-width="2"/>
+
+  <path d="M700, 400 C700, 450, 650, 480, 600, 480 C550, 480, 500, 450, 500, 400" fill="#000" stroke="#000" stroke-width="2"/>
+  <rect x="400" y="400" width="200" height="200" fill="black" opacity="0.5"/>
+  <path d="M450 200 L450 350 C450 400, 550 400, 550 350 L550 200 Z" fill="black"/>
+  <path d="M450 400 L450 550 C450 600, 550 600, 550 550 L550 400 Z" fill="black"/>
+
+</svg>
