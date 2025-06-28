@@ -168,17 +168,6 @@ Content-Type: application/json
 }
 \`\`\`
 
-### Health Check
-\`\`\`
-GET /api/health
-\`\`\`
-
-### File Serving
-\`\`\`
-GET /api/image/<filename>
-GET /api/audio/<filename>
-\`\`\`
-
 ## 🔍 Troubleshooting
 
 ### Common Issues
