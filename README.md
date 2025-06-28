@@ -51,8 +51,8 @@ A powerful web application that generates creative stories with AI-powered text,
    ## For audio generation
    OPENAI_API_KEY=your_openai_api_key_here
    
-   ##For image generation
-   HUGGINGFACE_API_TOKEN=your_huggingface_token_here
+   ## For image generation
+   HUGGINGFACE_API_TOKEN=your_huggingface_token_here <br>
    
    STABILITY_API_KEY=your_stability_api_key_here
    
@@ -98,24 +98,24 @@ A powerful web application that generates creative stories with AI-powered text,
 
 ## 🏗️ Project Structure
 
-\`\`\`
+```text
 ai-story-generator/
 ├── app.py                 # Main Flask application
 ├── requirements.txt       # Python dependencies
-├── .env                  # Environment variables (create this)
-├── script.js             # Frontend JavaScript
-├── index.html            # Frontend HTML (not included, create your own)
-├── utils/                # Utility modules
+├── .env                   # Environment variables (create this)
+├── script.js              # Frontend JavaScript
+├── index.html             # Frontend HTML (not included, create your own)
+├── utils/                 # Utility modules
 │   ├── story_generator.py    # Story generation with Gemini
 │   ├── image_generator.py    # Image generation with multiple providers
 │   ├── audio_generator.py    # Audio generation with OpenAI
 │   └── text_analysis.py     # Text analysis with Gemini
-├── temp/                 # Generated content storage
-│   ├── stories/          # Generated stories
-│   ├── images/           # Generated images
-│   └── audio/            # Generated audio files
-└── README.md             # This file
-\`\`\`
+├── temp/                  # Generated content storage
+│   ├── stories/           # Generated stories
+│   ├── images/            # Generated images
+│   └── audio/             # Generated audio files
+└── README.md              # This file
+
 
 ### Service Fallbacks
 
